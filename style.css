@@ -3,6 +3,8 @@ body {
 
 .nav-item .nav-link {
   color: black;
+  margin-top: 30px;
+  font-family: Arial;
 }
 
 header {
