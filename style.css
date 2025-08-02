@@ -8,3 +8,7 @@ body {
 h1 {
   color: #9b213b;
 }
+
+nav {
+  background-color: "red";
+}
