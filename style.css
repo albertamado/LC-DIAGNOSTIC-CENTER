@@ -5,7 +5,9 @@ body {
   padding: 50px;
 }
 
-
+nav-item{
+  font-color: black;
+}
 
 header {
   background-color: red;
