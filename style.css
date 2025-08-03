@@ -21,9 +21,3 @@ header {
 .nav.justify-content-end {
    background-color: white;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
-.company {
-  font-size: 50px;
-  color: #335C8A;
-  font-family: "Arial Black", sans-serif;
-}
