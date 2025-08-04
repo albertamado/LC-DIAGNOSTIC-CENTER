@@ -25,50 +25,9 @@ header {
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* === Carousel Controls (Prev / Next) === */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 100% 100%;
-  width: 2rem; /* same as $carousel-control-icon-width */
-  height: 2rem;
-  background-repeat: no-repeat;
+.carousel-item {
+  height: 520px; /* katulad ng dati mong SVG height */
+  background-size: cover;
   background-position: center;
-  opacity: 0.5; /* same as $carousel-control-opacity */
-  transition: opacity 0.15s ease; /* same as $carousel-control-transition */
+  background-repeat: no-repeat;
 }
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  opacity: 0.9; /* same as $carousel-control-hover-opacity */
-}
-
-/* Custom white arrow icons (SVG inline) */
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3E%3C/svg%3E");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
-}
-
-/* === Carousel Indicators === */
-.carousel-indicators [data-bs-target] {
-  width: 30px;  /* same as $carousel-indicator-width */
-  height: 3px;  /* same as $carousel-indicator-height */
-  background-color: rgba(255,255,255,0.5); /* $carousel-indicator-opacity */
-  transition: opacity 0.6s ease; /* $carousel-indicator-transition */
-}
-
-.carousel-indicators .active {
-  background-color: #ffffff; /* $carousel-indicator-active-bg */
-  opacity: 1; /* $carousel-indicator-active-opacity */
-}
-
-/* === Carousel Caption === */
-.carousel-caption {
-  width: 70%; /* $carousel-caption-width */
-  color: #ffffff; /* $carousel-caption-color */
-  padding-top: 1.25rem; /* $carousel-caption-padding-y */
-  padding-bottom: 1.25rem;
-}
-
