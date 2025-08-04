@@ -13,14 +13,6 @@ header {
   background-color: white;
 }
 
-p.company {
-  margin: 0;                /* Remove extra spacing */
-  font-family: "Arial Black", sans-serif;
-  font-weight: 1000;
-  color: #335C8A;
-  font-size: 24px;          /* Adjust as needed */
-  letter-spacing: 1px;      /* Optional: spacing between letters */
-}
 
 .nav.justify-content-end {
    background-color: white;
