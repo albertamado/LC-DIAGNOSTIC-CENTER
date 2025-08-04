@@ -21,8 +21,9 @@ header {
 
 
 .nav.justify-content-end {
-   background-color: white;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10; /* Make sure it's above the carousel */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* your original shadow */
 }
 
  .carousel-item {
