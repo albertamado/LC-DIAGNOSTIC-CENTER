@@ -25,7 +25,7 @@ body {
   
 header {
   background-color: pink;
-  height: 720px;
+  height: 620px;
   background-size: cover;
 }
 
@@ -37,7 +37,7 @@ header {
 }
 
  .carousel-item {
-      height: 620px;
+      height: 720px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
