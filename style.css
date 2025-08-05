@@ -43,6 +43,11 @@ header {
       background-repeat: no-repeat;
     }
 
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 1000;
+}
+
 .carousel-control-prev-icon {
   background-image: url('your-prev-icon.svg');
 }
