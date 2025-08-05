@@ -37,7 +37,7 @@ header {
 }
 
  .carousel-item {
-      height: 520px; /* same as dati mong size */
+      height: 620px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
