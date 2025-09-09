@@ -1,0 +1,108 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Patient's full name"
+    },
+    "contact_number": {
+      "type": "string",
+      "description": "Patient's contact phone number"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Patient's email address"
+    },
+    "appointment_type": {
+      "type": "string",
+      "enum": [
+        "Self-pay",
+        "HMO Consultation",
+        "HMO Laboratory"
+      ],
+      "default": "Self-pay",
+      "description": "Type of appointment"
+    },
+    "hmo_provider": {
+      "type": "string",
+      "description": "HMO Provider (if applicable)"
+    },
+    "hmo_member_id": {
+      "type": "string",
+      "description": "HMO Member ID (if applicable)"
+    },
+    "service": {
+      "type": "string",
+      "enum": [
+        "Laboratory Tests",
+        "Blood Test",
+        "Urinalysis",
+        "X-ray",
+        "Ultrasound",
+        "ECG",
+        "2D Echo",
+        "Drug Test",
+        "Pre-employment Exam",
+        "Executive Checkup",
+        "Other"
+      ],
+      "description": "Selected medical service"
+    },
+    "preferred_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Preferred appointment date"
+    },
+    "preferred_time": {
+      "type": "string",
+      "description": "Preferred appointment time"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes or requests"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "cancelled",
+        "completed"
+      ],
+      "default": "pending",
+      "description": "Appointment status"
+    }
+  },
+  "required": [
+    "full_name",
+    "contact_number",
+    "email",
+    "service",
+    "preferred_date",
+    "preferred_time"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        },
+        {
+          "created_by": "{{user.email}}"
+        },
+        {
+          "email": "{{user.email}}"
+        }
+      ]
+    },
+    "write": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
